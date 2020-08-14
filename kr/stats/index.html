@@ -39,20 +39,24 @@
     .then((data) => {
 
       let output =
-      '<table><thead><tr><th>ID</th><th>Name</th><th>WP</th></thead><tbody>';
+      '<table><thead><tr><th>ID</th><th>Slug</th><th>Name</th><th>WP</th></thead><tbody>';
       for (let i in data) {
-        id = Number(i) + 1;
-        console.log(data[i]);
-        output +=
-          '<tr><td>' +
-          data[i].id +
-          '</td><td>' +
-          '<a href="https://viewmore.work/kr/' + data[i].id + '/" target="_blank" rel="noopener noreferrer">' +
-          data[i].name +
-          '</a>' +
-          '</td><td>' +
-          data[i].wp +
-          '</td></tr>';
+        if ( data[i].slug !== 'N/A' ) {
+          id = Number(i);
+          console.log(data[i]);
+          output +=
+            '<tr><td>' +
+            id +
+            '</td><td>' +
+            data[i].slug +
+            '</td><td>' +
+            '<a href="https://viewmore.work/kr/' + data[i].slug + '/" target="_blank" rel="noopener noreferrer">' +
+            data[i].name +
+            '</a>' +
+            '</td><td>' +
+            data[i].wp +
+            '</td></tr>';
+        }
       }
       output += '</tbody></table>';
       document.getElementById('sites-list').innerHTML = output;

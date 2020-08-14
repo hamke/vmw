@@ -28,9 +28,9 @@
 </head>
 
 <body>
-  <div id="sites-list">
 
-  </div>
+  <div id="sites-list"></div>
+
   <script type="text/javascript">
     fetch( 'https://viewmore.work/data/sites-kr.json' )
     .then((res) => {
@@ -43,12 +43,11 @@
       for (let i in data) {
         if ( data[i].slug !== 'N/A' ) {
           id = Number(i);
-          console.log(data[i]);
           output +=
             '<tr><td>' +
             id +
             '</td><td>' +
-            data[i].slug +
+            '~/' + data[i].slug +
             '</td><td>' +
             '<a href="https://viewmore.work/kr/' + data[i].slug + '/" target="_blank" rel="noopener noreferrer">' +
             data[i].name +
@@ -63,10 +62,15 @@
 
     })
     .catch((err) => {
-      alert( 'Errors have occurred ...' )
-      // Do something for an error here
+      alert( 'Errors have occurred ...' );
     })
   </script>
+
+  <style>
+    #sites-list {
+      text-align: center;
+    }
+  </style>
 </body>
 
 </html>

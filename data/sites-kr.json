@@ -1,6 +1,6 @@
 {
   "N/A": {
-    "id": "N/A",
+    "slug": "N/A",
     "name": "K-Theme",
     "desc": "K-Theme is a WordPress theme that is optimized for Korean Internet environment",
     "url": "https:\/\/www.k-theme.com\/",
@@ -12,7 +12,7 @@
     ]
   },
   "1": {
-    "id": "1",
+    "slug": "1",
     "name": "K-Theme Base Template",
     "desc": "K-Theme Base Template",
     "url": "N/A",

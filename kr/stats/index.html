@@ -45,17 +45,17 @@
         console.log(data[i]);
         output +=
           '<tr><td>' +
-          data[i].name +
+          data[i].id +
           '</td><td>' +
-          '<a href="' + data[i].link + '" target="_blank" rel="noopener noreferrer">' +
-          data[i].title.rendered +
+          '<a href="https://viewmore.work/kr/' + data[i].id + '/" target="_blank" rel="noopener noreferrer">' +
+          data[i].name +
           '</a>' +
           '</td><td>' +
-          data[i].date.slice(0,10) +
+          data[i].wp +
           '</td></tr>';
       }
       output += '</tbody></table>';
-      document.getElementById('data').innerHTML = output;
+      document.getElementById('sites-list').innerHTML = output;
 
     })
     .catch((err) => {

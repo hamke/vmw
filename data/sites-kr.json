@@ -1,4 +1,34 @@
 {
+  "1": {
+    "slug": "1",
+    "name": "K-Theme Base Template",
+    "desc": "K-Theme Base Template",
+    "url": "N/A",
+    "wp": "no",
+    "tags": [
+      "bootstrap"
+    ]
+  },
+  "2": {
+    "slug": "2",
+    "name": "Template Example 2",
+    "desc": "Template Example 2",
+    "url": "N/A",
+    "wp": "no",
+    "tags": [
+      "bootstrap"
+    ]
+  },
+  "3": {
+    "slug": "3",
+    "name": "Template Example 3",
+    "desc": "Template Example 3",
+    "url": "N/A",
+    "wp": "no",
+    "tags": [
+      "bootstrap"
+    ]
+  },
   "N/A": {
     "slug": "N/A",
     "name": "K-Theme",
@@ -9,16 +39,6 @@
       "wordpress",
       "bootstrap",
       "business"
-    ]
-  },
-  "1": {
-    "slug": "1",
-    "name": "K-Theme Base Template",
-    "desc": "K-Theme Base Template",
-    "url": "N/A",
-    "wp": "no",
-    "tags": [
-      "bootstrap"
     ]
   }
 }

@@ -28,9 +28,41 @@
 </head>
 
 <body>
-  <div class="list">
+  <div id="sites-list">
 
   </div>
+  <script type="text/javascript">
+    fetch( 'https://viewmore.work/data/sites-kr.json' )
+    .then((res) => {
+      return res.json()
+    })
+    .then((data) => {
+
+      let output =
+      '<table><thead><tr><th>ID</th><th>Name</th><th>WP</th></thead><tbody>';
+      for (let i in data) {
+        id = Number(i) + 1;
+        console.log(data[i]);
+        output +=
+          '<tr><td>' +
+          data[i].name +
+          '</td><td>' +
+          '<a href="' + data[i].link + '" target="_blank" rel="noopener noreferrer">' +
+          data[i].title.rendered +
+          '</a>' +
+          '</td><td>' +
+          data[i].date.slice(0,10) +
+          '</td></tr>';
+      }
+      output += '</tbody></table>';
+      document.getElementById('data').innerHTML = output;
+
+    })
+    .catch((err) => {
+      alert( 'Errors have occurred ...' )
+      // Do something for an error here
+    })
+  </script>
 </body>
 
 </html>

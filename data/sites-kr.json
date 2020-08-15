@@ -1,8 +1,18 @@
 {
-  "1": {
-    "slug": "1",
-    "name": "K-Theme Base Template",
-    "desc": "K-Theme Base Template",
+  "sb-admin-pages": {
+    "slug": "sb-admin-pages",
+    "name": "SB Admin Pages",
+    "desc": "SB Admin Pages",
+    "url": "N/A",
+    "wp": "no",
+    "tags": [
+      "bootstrap"
+    ]
+  },
+  "3": {
+    "slug": "3",
+    "name": "Template Example 3",
+    "desc": "Template Example 3",
     "url": "N/A",
     "wp": "no",
     "tags": [
@@ -19,10 +29,10 @@
       "bootstrap"
     ]
   },
-  "3": {
-    "slug": "3",
-    "name": "Template Example 3",
-    "desc": "Template Example 3",
+  "1": {
+    "slug": "1",
+    "name": "K-Theme Base Template",
+    "desc": "K-Theme Base Template",
     "url": "N/A",
     "wp": "no",
     "tags": [
